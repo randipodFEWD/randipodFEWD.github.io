@@ -55,17 +55,27 @@ nav .line{
 	border-radius: 1em;
 	margin-top: .375em;
 }
-nav li:first-child{
+/*nav li:first-child{
 	float:right;
 	display: none;
 	cursor: pointer;
-}
-nav ul li {  transition: all 1s; }
+}*/
+/*nav ul li {  transition: all 1s; }
 
 nav li:nth-child(n+2):nth-child(-n+4) {
 	transition: all 1s;
+}*/
+
+#hamburger {
+	display: none;
+	cursor: pointer;
 }
 
+#mobile-nav {
+	height: 0em;
+	display: none;
+}
+	
 .logo {
 	background: url('../images/logo.svg') no-repeat top left;
   background-size: auto;
@@ -139,25 +149,82 @@ h4 {
 	text-decoration: none;
 	display: inline-block;
 }
+
 .button a:hover {
 	background-color: #9FAE31;
 	color: #fff;
 }
+
 section.projects {
 	width: 100%;
 	padding-bottom: 3em;
 }
+
 .project-thumb {
-	width: 15rem;
-	height: 15rem;
+	width: 16rem;
+	height: 16rem;
 	background-color: #333;
 	list-style: none;
 	display: inline-block;
-	margin: .75em;
+	margin: .625em;
 	position: relative;
-	border: 6px solid #fff;
+	border: 4px solid #fff;
 	outline: 1px solid #bebebe;
 }
+
+.overlay {
+	position: absolute;
+  top: 0;
+  left: 0;
+  height: 16rem;
+  width: 16rem;
+  opacity: 0;
+  transition: opacity .3s;
+  background: rgba(0,0,0,.7);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-size: 1.875em;
+  font-weight: 500;
+  letter-spacing: .05em;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.client {
+	display: inline-block;
+	margin: 1.5em 0;	
+	font-size: .45em;
+  letter-spacing:	normal;
+  line-height: 1.5;
+}
+
+#project1 {
+	background-image: url('../images/thumb1.jpg');
+	background-size: cover;
+}
+
+#project2 {
+	background-image: url('../images/thumb2.jpg');
+	background-size: cover;
+}
+
+#project3 {
+	background-image: url('../images/thumb3.jpg');
+	background-size: cover;
+}
+
+#project4 {
+	background-image: url('../images/thumb4.jpg');
+	background-size: cover;
+}
+
 li img {
 	max-width: 100%;
 	max-height: 100%;
@@ -292,20 +359,26 @@ footer img {
     padding-left: 7%;
 	}
 
-	nav #responsive-nav {
+	#hamburger {
 		display:block;
 		position: absolute;
 		top:.6em;
 		right: 1em;
 		margin-right: .625em;
-		transition: all 1s
+		transition: all 1s;
 	}
 
-	nav	ul{
-		height: 2em;
+	.reg-nav {
+		display: none;
+	}
+
+	#mobile-nav {
+		height: 0em;
 		overflow: hidden;
 		background-color: #000;
 		transition: all 1s;
+		margin-top: .25em;
+		display: inline-block;
 	}
 
 	nav li {
@@ -329,9 +402,9 @@ footer img {
 	}
 }
 .slideDown{
-	height: 1em;
-	display: inline-block;
-}
+	height: 2em;
+/*	display: inline-block;
+*/}
 
 /*OVERLAY*/
 #overlay {

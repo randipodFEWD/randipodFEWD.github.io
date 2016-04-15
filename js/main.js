@@ -1,5 +1,8 @@
+
 $(function(){
-  $('#responsive-nav').click(function(){
-    $("nav li").toggleClass('slideDown');
+	console.log('ready!');
+
+  $('#hamburger').click(function(){
+    $("#mobile-nav").addClass('slideDown');
   })
 });
