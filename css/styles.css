@@ -1,0 +1,355 @@
+body {
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	box-sizing: border-box;
+}
+.floatleft {
+	float: left;
+}
+/*#page-header {
+	background: black;
+	color: white;
+	overflow: hidden;
+	border-bottom: 4px solid yellow;
+	padding: 0 0%;
+}*/
+nav {
+  height: 2.5em;
+	padding: .5em;
+	background-color: rgba(35,31,32,0.75);
+	position:fixed;
+	z-index: 200;
+	width: 100%;
+}
+nav ul {
+	font-size: 1.0875em;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;	
+	color: #fff;
+	display: inline-block;
+	float: right;
+	letter-spacing: .0625em;
+	margin-right: 1.5em;
+	margin-top: .74em;
+	text-shadow: 1px 1px 3px rgba(0,0,0,0.65);;
+}
+nav li {
+	display: inline-block;
+	margin-left: 1em;
+}
+nav img {
+	height: 2.475em;
+}
+nav ul a {
+	color: #fff;
+	text-decoration: none;
+}
+nav ul a:hover {
+	color: #9FAE31;
+}
+nav .line{
+	width: 2.25em;
+	height: .15em;
+	background: #fff;
+	border-radius: 1em;
+	margin-top: .375em;
+}
+nav li:first-child{
+	float:right;
+	display: none;
+	cursor: pointer;
+}
+nav ul li {  transition: all 1s; }
+
+nav li:nth-child(n+2):nth-child(-n+4) {
+	transition: all 1s;
+}
+
+.logo {
+	background: url('../images/logo.svg') no-repeat top left;
+  background-size: auto;
+  height: 95%;
+}
+.container1 {
+	width: 100%;
+  height: 24em;
+	background-image: url('../images/mossy.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+/*.bannercontent {
+	display: flex;
+}*/
+.container2 {
+	max-width: 90%;
+}
+h1 {
+	font-family: 'Pacifico', cursive;
+	font-size: 5em;
+	color: #fff;
+	text-align:	center;
+	width: 100%;
+	margin-top: 10%;
+	margin-bottom: .25em;
+	text-shadow: 2px 2px 15px #000;
+	display: inline-block;
+}
+h2 {
+	font-size: 1.5em;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	color: #fff;
+	text-align:	center;
+	width: 100%;
+	margin-top: 0;
+	text-shadow: 1px 2px 4px #000;
+	display: inline-block;
+}
+h3 {
+	font-size: 1.625rem;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	color: #6c7312;
+	text-align:	left;
+	display: inline-block;
+	margin: 2em 0 1em 1.75em;
+}
+h4 {
+	font-size: 1.625rem;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	color: #5AA39D;
+	text-align:	left;
+	margin: 0 2em 1em 2em;
+}
+.button a {
+	background-color: #fff;
+	color: #6c7312;
+	font-size: 1rem;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 600;
+	letter-spacing: .0875em;
+	border: 2.5px solid #bebebe;
+	border-radius: 6px;
+	margin-top: 1em;
+	padding: 6px 10px 4px 10px;
+	box-shadow: 1px 1px 8px #000;
+	text-shadow: none;
+	text-decoration: none;
+	display: inline-block;
+}
+.button a:hover {
+	background-color: #9FAE31;
+	color: #fff;
+}
+section.projects {
+	width: 100%;
+	padding-bottom: 3em;
+}
+.project-thumb {
+	width: 15rem;
+	height: 15rem;
+	background-color: #333;
+	list-style: none;
+	display: inline-block;
+	margin: .75em;
+	position: relative;
+	border: 6px solid #fff;
+	outline: 1px solid #bebebe;
+}
+li img {
+	max-width: 100%;
+	max-height: 100%;
+	border: 0;
+}
+ul.thumbs {
+	display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1em;
+}
+section.services {
+	background-color: #eee;
+	padding-top: 3em;
+	padding-bottom: 4em;
+}
+section.services span {
+	font-family: 'Pacifico', cursive;
+	font-size: .75em;
+	color: rgba(0,117,108,0.625);
+	display: inline-block;
+	float: right;
+	margin-top: .45em;
+}
+.serviceContainer {
+	display: flex;
+	/*align-items: center;*/
+	justify-content: center;
+}
+.serviceContainer div {
+    margin: 0 1.75em;
+}
+.servicelist {
+	color: #6c7312;
+	font-size: 1.25rem;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	line-height: 1.25;
+}
+.servicelist ul {
+	list-style-position: hanging;
+}
+.servicelist li {
+	margin-top: 1em;
+	padding-left: 1.25em;
+	text-indent: -1.25em;
+
+}
+.servicelist li:before {
+  padding-right: .75em;
+  font-family: 'FontAwesome';
+  font-size: .75em;
+  content: "\f0a9";
+  color: #5AA39D;
+  top: -2px; left:-10px;
+}
+section.patternroom {
+	background-image: url('../images/hazanco-pattern.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 5.5em 0 2em 0;
+}
+ul.patternthumbs {
+	display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0;
+}
+.pattern-thumb {
+	width: 14rem;
+	height: 14rem;
+	background-color: #333;
+	list-style: none;
+	display: inline-block;
+	margin: .75em;
+	position: relative;
+	border: 10px solid #fff;
+}
+.shadow {
+	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.75);
+}
+footer {
+	padding: 2em;
+	color: #6c7312;
+	font-size: 1rem;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	line-height: 1.5;
+	margin-bottom: 1.5em;
+}
+.social {
+	display: inline-block;
+	float: right;
+	color: #9FAE31;
+}
+.contact {
+	float: left;
+	width: 50%;
+	display: inline-block;
+	margin-bottom: 0em;
+}
+i {
+	margin-left: .25em;
+}
+footer img {
+	width: 9em;
+}
+.copyright {
+	display: block;
+	float: right;
+	color: #9FAE31;
+	font-size: .75em;
+	margin-bottom: 1.5em;
+	margin-top: .5em;
+}
+/*RESPONSIVE*/
+@media screen and (max-width: 1024px){
+	h1 {
+		margin-top: 13%;
+	}
+}
+
+@media screen and (max-width: 768px){
+	h1 {
+		font-size: 4em;
+		margin-top: 20%;
+	}
+
+	h2 {
+		font-size: 1.25em;
+		width: 85%;
+    padding-left: 7%;
+	}
+
+	nav #responsive-nav {
+		display:block;
+		position: absolute;
+		top:.6em;
+		right: 1em;
+		margin-right: .625em;
+		transition: all 1s
+	}
+
+	nav	ul{
+		height: 2em;
+		overflow: hidden;
+		background-color: #000;
+		transition: all 1s;
+	}
+
+	nav li {
+		transition: height 1s;
+		display: none;
+	}
+}
+@media screen and (max-width: 480px){
+	h1 {
+		font-size: 2.75em;
+		margin-top: 25%;
+	}
+	h2 {
+		font-size: 1.125em;
+	}
+	h3 {
+		margin: 1em 0 1em .5em;
+	}
+	.container1 {
+  height: 18em;
+	}
+}
+.slideDown{
+	height: 1em;
+	display: inline-block;
+}
+
+/*OVERLAY*/
+#overlay {
+  background: rgba(0, 0, 0, .75);
+  text-align: center;
+  padding: 45px 0 66px 0;
+  opacity: 0;
+  -webkit-transition: opacity .25s ease;
+  -moz-transition: opacity .25s ease;
+}
+
+#box:hover #overlay {
+  opacity: 1;
+}
+
+#plus {
+  font-family: Helvetica;
+  font-weight: 900;
+  color: rgba(255, 255, 255, .85);
+  font-size: 96px;
+}
