@@ -94,10 +94,6 @@ nav li:nth-child(n+2):nth-child(-n+4) {
 	display: none;
 }
 
-#mobile-nav li {
-	display: none;
-}
-
 .removeThis {
 	display: none;
 }
