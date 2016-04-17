@@ -29,9 +29,8 @@ body {
 	padding: 0 0%;
 }*/
 nav {
-  height: 2.5em;
-	padding: .5em;
-	background-color: rgba(35,31,32,0.75);
+ 	height: 2.975em;
+ 	background-color: rgba(35,31,32,0.75);
 	position:fixed;
 	z-index: 200;
 	width: 100%;
@@ -42,10 +41,7 @@ nav ul {
 	font-weight: 500;	
 	color: #fff;
 	display: inline-block;
-	float: right;
 	letter-spacing: .0625em;
-	margin-right: 1.5em;
-	margin-top: .74em;
 	text-shadow: 1px 1px 3px rgba(0,0,0,0.65);;
 }
 nav li {
@@ -54,20 +50,30 @@ nav li {
 }
 nav img {
 	height: 2.475em;
+ 	margin: .25em;
 }
+
 nav ul a {
 	color: #fff;
 	text-decoration: none;
 }
+
 nav ul a:hover, nav a:active {
 	color: #9FAE31;
 }
+
 nav .line{
 	width: 2.25em;
 	height: .15em;
 	background: #fff;
 	border-radius: 1em;
 	margin-top: .375em;
+}
+
+#reg-nav {
+	float: right;
+	margin-right: 1.5em;
+	margin-top: .875em;
 }
 /*nav li:first-child{
 	float:right;
@@ -85,23 +91,23 @@ nav li:nth-child(n+2):nth-child(-n+4) {
 	cursor: pointer;
 }
 
-#mobile-nav {
+/*#mobile-nav {
 	height: 0em;
-/*	display: none;
-*/} 
-
-#mobile-nav ul {
 	display: none;
-}
+} */
 
 .removeThis {
 	display: none;
+	height: 0em;
+	transition: height 1s ease;
+	-webkit-transition: height 1s ease;
+	-moz-transition: height 1s ease;
 }
 	
 .logo {
 	background: url('../images/logo.svg') no-repeat top left;
-  background-size: auto;
-  height: 95%;
+ 	background-size: auto;
+ 	height: 95%;
 }
 .container1 {
 	width: 100%;
@@ -405,9 +411,21 @@ footer img {
 		width: 100%;
 		overflow: hidden;
 		background-color: #000;
-		margin-top: .25em;
-		-webkit-transition: height .25s ease;
- 		-moz-transition: height .25s ease;
+		margin-top: -.15em;
+		padding: .75em;
+/*	    -moz-transition: 1s;
+	    -ms-transition: 1s;
+	    -o-transition: 1s;
+	    -webkit-transition: 1s;
+	    transition: 1s;*/
+	}
+
+/*	#mobile-nav ul {
+		float: right;
+	}*/
+
+	#mobile-nav li {
+		margin-right: .5em;
 	}
 
 	nav li {
@@ -434,6 +452,10 @@ footer img {
 	display: block;
 /*	display: inline-block;
 */}
+
+.hide {
+	height: 0;
+}
 
 
 /*OVERLAY*/
