@@ -87,10 +87,18 @@ nav li:nth-child(n+2):nth-child(-n+4) {
 
 #mobile-nav {
 	height: 0em;
-	display: none;
-} 
+/*	display: none;
+*/} 
 
 #mobile-nav ul {
+	display: none;
+}
+
+#mobile-nav li {
+	display: none;
+}
+
+.removeThis {
 	display: none;
 }
 	
@@ -374,7 +382,7 @@ footer img {
 	h2 {
 		font-size: 1.25em;
 		width: 85%;
-    padding-left: 7%;
+    	padding-left: 7%;
 	}
 
 	#hamburger {
@@ -386,23 +394,23 @@ footer img {
 		transition: all 1s;
 	}
 
-	.reg-nav {
+	#reg-nav {
 		display: none;
 	}
 
 	#mobile-nav {
 		height: 2em;
+		width: 100%;
 		overflow: hidden;
 		background-color: #000;
 		margin-top: .25em;
-		display: inline-block;
-		-webkit-transition: opacity .25s ease;
- 		-moz-transition: opacity .25s ease;
+		-webkit-transition: height .25s ease;
+ 		-moz-transition: height .25s ease;
 	}
 
 	nav li {
-		transition: height 1s;
-		display: none;
+/*		transition: height 1s;
+		display: none;*/
 	}
 }
 @media screen and (max-width: 480px){
@@ -421,9 +429,10 @@ footer img {
 	}
 }
 .slideDown{
-	height: 2em;
+	display: block;
 /*	display: inline-block;
 */}
+
 
 /*OVERLAY*/
 #overlay {
