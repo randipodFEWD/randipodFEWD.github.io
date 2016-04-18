@@ -21,13 +21,7 @@ body {
 .floatleft {
 	float: left;
 }
-/*#page-header {
-	background: black;
-	color: white;
-	overflow: hidden;
-	border-bottom: 4px solid yellow;
-	padding: 0 0%;
-}*/
+
 nav {
  	height: 2.975em;
  	background-color: rgba(35,31,32,0.75);
@@ -35,22 +29,25 @@ nav {
 	z-index: 200;
 	width: 100%;
 }
+
 nav ul {
 	font-size: 1.0875em;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 500;	
 	color: #fff;
-	display: inline-block;
 	letter-spacing: .0625em;
-	text-shadow: 1px 1px 3px rgba(0,0,0,0.65);;
+	display: inline-block;
+	text-shadow: 1px 1px 3px rgba(0,0,0,0.65);
 }
+
 nav li {
 	display: inline-block;
 	margin-left: 1em;
 }
+
 nav img {
 	height: 2.475em;
- 	margin: .25em;
+ 	margin: .25em 0 0 .25em;
 }
 
 nav ul a {
@@ -75,35 +72,12 @@ nav .line{
 	margin-right: 1.5em;
 	margin-top: .875em;
 }
-/*nav li:first-child{
-	float:right;
-	display: none;
-	cursor: pointer;
-}*/
-/*nav ul li {  transition: all 1s; }
-
-nav li:nth-child(n+2):nth-child(-n+4) {
-	transition: all 1s;
-}*/
 
 #hamburger {
 	display: none;
 	cursor: pointer;
 }
 
-/*#mobile-nav {
-	height: 0em;
-	display: none;
-} */
-
-.removeThis {
-	display: none;
-	height: 0em;
-	transition: height 1s ease;
-	-webkit-transition: height 1s ease;
-	-moz-transition: height 1s ease;
-}
-	
 .logo {
 	background: url('../images/logo.svg') no-repeat top left;
  	background-size: auto;
@@ -116,12 +90,11 @@ nav li:nth-child(n+2):nth-child(-n+4) {
 	background-repeat: no-repeat;
 	background-size: 100%;
 }
-/*.bannercontent {
-	display: flex;
-}*/
+
 .container2 {
 	max-width: 90%;
 }
+
 h1 {
 	font-family: 'Pacifico', cursive;
 	font-size: 5em;
@@ -133,6 +106,7 @@ h1 {
 	text-shadow: 2px 2px 15px #000;
 	display: inline-block;
 }
+
 h2 {
 	font-size: 1.5em;
 	font-family: 'Roboto', sans-serif;
@@ -144,6 +118,7 @@ h2 {
 	text-shadow: 1px 2px 4px #000;
 	display: inline-block;
 }
+
 h3 {
 	font-size: 1.625rem;
 	font-family: 'Roboto', sans-serif;
@@ -153,6 +128,7 @@ h3 {
 	display: inline-block;
 	margin: 2em 0 1em 1.75em;
 }
+
 h4 {
 	font-size: 1.625rem;
 	font-family: 'Roboto', sans-serif;
@@ -161,6 +137,7 @@ h4 {
 	text-align:	left;
 	margin: 0 2em 1em 2em;
 }
+
 .button a {
 	background-color: #fff;
 	color: #6c7312;
@@ -202,35 +179,35 @@ section.projects {
 
 .overlay {
 	position: absolute;
-  top: 0;
-  left: 0;
-  height: 16rem;
-  width: 16rem;
-  opacity: 0;
-  transition: opacity .3s;
-  background: rgba(0,0,0,.7);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-  font-size: 1.875em;
-  font-weight: 500;
-  letter-spacing: .05em;
+  	top: 0;
+  	left: 0;
+  	height: 16rem;
+  	width: 16rem;
+  	opacity: 0;
+  	transition: opacity .3s;
+  	background: rgba(0,0,0,.7);
+  	color: white;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	text-align: center;
+  	flex-wrap: wrap;
+  	flex-direction: column;
+  	font-size: 1.875em;
+  	font-weight: 500;
+  	letter-spacing: .05em;
 }
 
 .overlay:hover {
-  opacity: 1;
+	opacity: 1;
 }
 
 .client {
 	display: inline-block;
 	margin: 1.5em 0;	
 	font-size: .45em;
-  letter-spacing:	normal;
-  line-height: 1.5;
+	letter-spacing:	normal;
+	line-height: 1.5;
 }
 
 #project1 {
@@ -258,17 +235,20 @@ li img {
 	max-height: 100%;
 	border: 0;
 }
+
 ul.thumbs {
 	display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 1em;
 }
+
 section.services {
 	background-color: #eee;
 	padding-top: 3em;
 	padding-bottom: 4em;
 }
+
 section.services span {
 	font-family: 'Pacifico', cursive;
 	font-size: .75em;
@@ -277,14 +257,17 @@ section.services span {
 	float: right;
 	margin-top: .45em;
 }
+
 .serviceContainer {
 	display: flex;
 	/*align-items: center;*/
 	justify-content: center;
 }
+
 .serviceContainer div {
     margin: 0 1.75em;
 }
+
 .servicelist {
 	color: #6c7312;
 	font-size: 1.25rem;
@@ -292,15 +275,18 @@ section.services span {
 	font-weight: 400;
 	line-height: 1.25;
 }
+
 .servicelist ul {
 	list-style-position: hanging;
 }
+
 .servicelist li {
 	margin-top: 1em;
 	padding-left: 1.25em;
 	text-indent: -1.25em;
 
 }
+
 .servicelist li:before {
   padding-right: .75em;
   font-family: 'FontAwesome';
@@ -309,18 +295,21 @@ section.services span {
   color: #5AA39D;
   top: -2px; left:-10px;
 }
+
 section.patternroom {
 	background-image: url('../images/hazanco-pattern.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 5.5em 0 2em 0;
 }
+
 ul.patternthumbs {
 	display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 0;
 }
+
 .pattern-thumb {
 	width: 14rem;
 	height: 14rem;
@@ -331,9 +320,11 @@ ul.patternthumbs {
 	position: relative;
 	border: 10px solid #fff;
 }
+
 .shadow {
 	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.75);
 }
+
 footer {
 	padding: 2em;
 	color: #6c7312;
@@ -343,23 +334,28 @@ footer {
 	line-height: 1.5;
 	margin-bottom: 1.5em;
 }
+
 .social {
 	display: inline-block;
 	float: right;
 	color: #9FAE31;
 }
+
 .contact {
 	float: left;
 	width: 50%;
 	display: inline-block;
 	margin-bottom: 0em;
 }
+
 i {
 	margin-left: .25em;
 }
+
 footer img {
 	width: 9em;
 }
+
 .copyright {
 	display: block;
 	float: right;
@@ -368,10 +364,11 @@ footer img {
 	margin-bottom: 1.5em;
 	margin-top: .5em;
 }
+
 /*RESPONSIVE*/
 @media screen and (min-width: 768px) {
 	#mobile-nav {
-    display:none
+    display: none !important;
 	}
 }
 
@@ -399,7 +396,6 @@ footer img {
 		top:.6em;
 		right: 1em;
 		margin-right: .625em;
-		transition: all 1s;
 	}
 
 	#reg-nav {
@@ -410,27 +406,33 @@ footer img {
 		height: 2em;
 		width: 100%;
 		overflow: hidden;
-		background-color: #000;
-		margin-top: -.15em;
-		padding: .75em;
-/*	    -moz-transition: 1s;
-	    -ms-transition: 1s;
-	    -o-transition: 1s;
-	    -webkit-transition: 1s;
-	    transition: 1s;*/
+		background-color: #fff;
+		color: #000 !important;
+		text-shadow: none !important;
+		padding: .5em;
+		font-size: .85em;
+		font-family: 'Roboto', sans-serif;
+		display: inline-flex;
+		justify-content: flex-end;
+		flex-wrap: wrap-reverse;
 	}
 
-/*	#mobile-nav ul {
-		float: right;
-	}*/
+	#mobile-nav ul {
+		margin-top: .5em;
+	}
+
+	#mobile-nav ul:last-child {
+		margin-right: 2.25em;
+		font-weight: 700;
+	}
 
 	#mobile-nav li {
-		margin-right: .5em;
-	}
+/*		display: inline-block;
+*/	}
 
-	nav li {
-/*		transition: height 1s;
-		display: none;*/
+	nav ul a {
+		color: #000;
+		text-shadow: none;
 	}
 }
 @media screen and (max-width: 480px){
@@ -447,15 +449,15 @@ footer img {
 	.container1 {
   height: 18em;
 	}
+	section.patternroom {
+	background-image: url('../images/hazanco-pattern-mobile.svg');
+	padding: 7em 0 2em 0;
+	}
 }
 .slideDown{
 	display: block;
 /*	display: inline-block;
 */}
-
-.hide {
-	height: 0;
-}
 
 
 /*OVERLAY*/
@@ -464,8 +466,6 @@ footer img {
   text-align: center;
   padding: 45px 0 66px 0;
   opacity: 0;
-  -webkit-transition: opacity .25s ease;
-  -moz-transition: opacity .25s ease;
 }
 
 #box:hover #overlay {
