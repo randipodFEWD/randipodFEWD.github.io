@@ -198,7 +198,7 @@ section.projects {
   	letter-spacing: .05em;
 }
 
-.overlay:hover {
+.overlay:hover, .overlay:focus {
 	opacity: 1;
 }
 
