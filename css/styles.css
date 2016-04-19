@@ -48,16 +48,17 @@ nav ul a {
 	text-decoration: none;
 }
 
-nav ul a:hover, nav a:active {
+nav ul a:hover {
 	color: #9FAE31;
 }
 
 nav .line{
-	width: 2.25em;
-	height: .15em;
-	background: #fff;
+	width: 2.35em;
+	height: .1875em;
+	background: #9FAE31;
 	border-radius: 1em;
 	margin-top: .375em;
+	box-shadow: 0px 0px 4px rgba(0,0,0,0.6);
 }
 
 #reg-nav {
@@ -82,6 +83,11 @@ nav .line{
 	background-image: url('../images/mossy.jpg');
 	background-repeat: no-repeat;
 	background-size: 100%;
+}
+
+#project div.container1 {
+	background-image: none;
+	height: 2.975em;
 }
 
 .container2 {
@@ -115,7 +121,7 @@ h2 {
 	color: #fff;
 	text-align:	center;
 	width: 100%;
-	margin-top: 0;
+	margin-top: .75em;
 	text-shadow: 1px 2px 4px #000;
 	display: inline-flex;
 	justify-content: center;
@@ -232,6 +238,26 @@ section.projects {
 	background-size: cover;
 }
 
+#project5 {
+	background-image: url('../images/thumb5.jpg');
+	background-size: cover;
+}
+
+#project6 {
+	background-image: url('../images/thumb6.jpg');
+	background-size: cover;
+}
+
+#project7 {
+	background-image: url('../images/thumb7.jpg');
+	background-size: cover;
+}
+
+#project8 {
+	background-image: url('../images/thumb8.jpg');
+	background-size: cover;
+}
+
 li img {
 	max-width: 100%;
 	max-height: 100%;
@@ -286,7 +312,6 @@ section.services span {
 	margin-top: 1em;
 	padding-left: 1.25em;
 	text-indent: -1.25em;
-
 }
 
 .servicelist li:before {
@@ -299,10 +324,21 @@ section.services span {
 }
 
 section.patternroom {
-	background-image: url('../images/hazanco-pattern.svg');
+	background-image: url('../images/patternroom.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 5.5em 0 2em 0;
+	padding: 2em 0 2em 0;
+}
+
+section.patternroom h3 {
+	font-size: 1.625rem;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	color: #6c7312;
+	text-align:	left;
+	display: inline-block;
+	margin: 0 0 1em 1.75em;
+	text-shadow: 0px 0px 5px rgba(255,255,255,0.85);
 }
 
 ul.patternthumbs {
@@ -321,8 +357,8 @@ ul.patternthumbs {
 	margin: .75em;
 	position: relative;
 	border: 5px solid #fff;
-	box-shadow: 1px 1px 8px rgba(0,0,0,0.65);
-}
+/*	box-shadow: 1px 1px 8px rgba(0,0,0,0.65);
+*/}
 
 .shadow {
 	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.75);
@@ -367,8 +403,68 @@ footer img {
 	margin-bottom: 1.5em;
 	margin-top: .5em;
 }
+/* PROJECT PAGE */
 
-/*RESPONSIVE*/
+section#project-content {
+	width: 90%
+}
+
+#project h1 {
+	font-size: 2rem;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	color: #6c7312;
+	text-align:	left;
+	display: block;
+	margin: 2em 0 .25em 5%;
+	text-shadow: none;
+}
+
+#project h2 {
+	font-size: 1rem;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	color: #6c7312;
+	text-align:	left;
+	display: block;
+	margin: 0em 0 3em 5%;
+	text-shadow: none;
+}
+
+#project > div.project-content {
+	width: 80%;
+}
+
+#project-content img {
+	width: 100%;
+	margin-left: 5%;
+	margin-bottom: 3em;
+	border: 1px solid #bebebe;
+}
+
+#project-content#small{
+	width: 50%;
+}
+
+#project p {
+	font-size: 1.125em;
+	line-height: 1.5;
+	font-weight: 300;
+	width: 35%;
+	margin-left: 5%;
+	display: inline-block;
+	float: left;
+}
+
+#project p a {
+	font-size: .875em;
+	font-weight: 500;
+	color: #9FAE31;
+	text-decoration: none;
+	margin-top: 1em;
+}
+
+/* RESPONSIVE */
 @media screen and (min-width: 768px) {
 	#mobile-nav {
     display: none !important;
@@ -387,18 +483,22 @@ footer img {
 		margin-top: 20%;
 	}
 
+	#project-content h1 {
+		margin-top: 1em;
+	}
+
 	h2 {
 		font-size: 1.25em;
 		width: 85%;
-    	padding-left: 7%;
+    	margin-top: .5em;
 	}
 
 	#hamburger {
 		display:block;
 		position: absolute;
-		top:.6em;
+		top:.425em;
 		right: 1em;
-		margin-right: .625em;
+		margin-right: .25em;
 	}
 
 	#reg-nav {
@@ -437,13 +537,31 @@ footer img {
 		color: #000;
 		text-shadow: none;
 	}
+
 }
 @media screen and (max-width: 535px){
 	section.patternroom {
-	background-image: url('../images/hazanco-pattern-mobile.svg');
-	padding: 7em 0 2em 0;
+	background-image: url('../images/patternroom-mobile.svg');
+	padding: 2em 0 2em 0;
+	}
+	.serviceContainer {
+	display: flex;
+	/*align-items: center;*/
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 90%;
+	}
+	.servicelist li:first-child {
+	margin-top: 1em;
+	}
+	section.services span {
+		float: none;
+	}
+	#list1 {
+	    margin-left: -0.1875em;
 	}
 }
+
 @media screen and (max-width: 480px){
 	h1 {
 		font-size: 2.75em;
@@ -451,6 +569,7 @@ footer img {
 	}
 	h2 {
 		font-size: 1.125em;
+		margin-top: .5em;
 	}
 	h3 {
 		margin: 1em 0 1em .5em;
