@@ -163,7 +163,7 @@ h4 {
 	display: inline-block;
 }
 
-.button a:hover, a:focus {
+.button a:hover {
 	background-color: #9FAE31;
 	color: #fff;
 }
